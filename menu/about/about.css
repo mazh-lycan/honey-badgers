@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url("./pics/fondopic.png");
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    background-image:url("./pics/webheader.jpg");
+    padding: 2px 0;
+}
+
+.logo {
+    max-width: 270px; /* Adjust the max-width as needed */
+    margin-right: 90px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-image:url("./pics/webheader.jpg");
+    padding: 15px 0;
+    
+}
+
+div{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    transition: transform .7s ease-in-out;
+    margin-right: 30px;
+
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+
+p{
+    font-size: 17px; /* Set font size */
+    font-family: 'consolas'; 
+    color: white;
+}
+
+
+.buttoncontainer p{
+    margin-top: 0px; /* Add some space between the button and the text */
+    font-family: 'consolas';
+    font-size: 14px;
+    color: white;
+}
+
+r{
+    font-size: 18px; /* Set font size */
+    font-family: 'AGRESSIVE', sans-serif; /* Specify custom font */
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+m{
+    font-size: 22px; /* Set font size */
+    font-family: Consolas, sans-serif;
+    color: orange;
+    display: flex;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+padding-top: 102px;
+}

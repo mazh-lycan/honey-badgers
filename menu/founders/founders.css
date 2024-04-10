@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-image: url('./pics/fondopic.png'); 
+    background-size: cover;
+  }
+
+
+  header {
+    width: 100%; 
+    height: 90px;
+    text-align: center;
+    background-image:url("./pics/webheader.jpg");
+    padding: 2px 0;
+    position: absolute; 
+    z-index: 998;
+  }
+    
+
+ container {
+  position: absolute;
+  top: 90px; /* Adjust this value as needed */
+  width: 100%;
+  bottom: 0%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  transition: transform .7s ease-in-out;
+  margin-right: 30px;
+
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+
+
+.logo {
+  max-width: 270px; /* Adjust the max-width as needed */
+  margin-right: 90px;
+}
+
+  .founder {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .founder:hover .founder-img {
+    transform: scale(1.2);
+    filter: brightness(50%);
+  }
+  
+  .founder-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .founder:hover .founder-text {
+    opacity: 1;
+  }
+  
+  .founder-img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+
+  .home-button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  r {
+    color: white;
+    text-align: center;
+    font-size: 27px; /* Set font size */
+    font-family: consolas;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.9),0px 0px 6px black,0px 0px 6px black; /* Add black shadow */
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-size: 16px; /* Set font size */
+    font-family: consolas;
+  }
