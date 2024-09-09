@@ -1,3 +1,45 @@
+// IMAGE SLIDER
+const imageWrapper = document.querySelector('.image-wrapper');
+const imageItems = document.querySelectorAll('.image-wrapper > *');
+const imageLength = imageItems.length;
+const perView = 3;
+let totalScroll = 0;
+const delay = 2000;
+
+imageWrapper.style.setProperty('--per-view', perView);
+
+// Clone all images and append them to the end
+imageItems.forEach(item => {
+    let clone = item.cloneNode(true);
+    clone.style.margin = '0';  // Ensure no margin/padding is carried over
+    imageWrapper.appendChild(clone);
+});
+
+let autoScroll = setInterval(scrolling, delay);
+
+function scrolling() {
+    totalScroll++;
+    const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + parseFloat(getComputedStyle(imageWrapper).gap);
+    imageWrapper.style.transition = '.3s'; 
+
+    // Correct the translateX syntax
+    imageWrapper.style.transform = `translateX(-${totalScroll * widthEl}px)`;
+
+    if (totalScroll === imageLength) {
+        setTimeout(() => {
+            // Reset the scroll position and remove the transition
+            imageWrapper.style.transition = 'none';
+            imageWrapper.style.transform = 'translateX(0)';
+            totalScroll = 0;
+
+            // Restore transition property after a tiny delay
+            setTimeout(() => {
+                imageWrapper.style.transition = '.3s';
+            }, 50); // Small delay to re-enable transition
+        }, 300); // Match the transition duration
+    }
+}
+
 window.onscroll = function () { myFunction() };
 
 var header = document.getElementById("myHeader");
