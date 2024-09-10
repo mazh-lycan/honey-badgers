@@ -1,3 +1,4 @@
+
 // IMAGE SLIDER
 const imageWrapper = document.querySelector('.image-wrapper');
 const imageItems = document.querySelectorAll('.image-wrapper > *');
