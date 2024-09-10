@@ -53,6 +53,37 @@ button:hover{
   margin-right: 90px;
 }
 
+
+
+@media (min-width: 1200px) {
+  .logo {
+      margin-right: 20%; 
+  }
+}
+
+@media (min-width: 1300px) {
+  .logo {
+      margin-right: 25%; 
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo {
+      margin-right: 30%; /* Further increase margin on very wide screens */
+  }
+}
+
+@media (min-width: 1750px) {
+  .logo {
+      margin-right: 40%; /* Further increase margin on very wide screens */
+  }
+}
+
+@media (min-width: 2000px) {
+  .logo {
+      margin-right: 45%; /* Further increase margin on very wide screens */
+  }
+}
   .founder {
     flex: 1;
     position: relative;
