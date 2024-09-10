@@ -15,10 +15,17 @@ imageItems.forEach(item => {
     imageWrapper.appendChild(clone);
 });
 
+// Keep the last badger appearing before new cycle
+for(let i = 0; i < perView; i++) {
+    imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+  }
+
 let autoScroll = setInterval(scrolling, delay);
 
 function scrolling() {
+
     totalScroll++;
+
     const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + parseFloat(getComputedStyle(imageWrapper).gap);
     imageWrapper.style.transition = '.3s'; 
 
@@ -35,7 +42,7 @@ function scrolling() {
             // Restore transition property after a tiny delay
             setTimeout(() => {
                 imageWrapper.style.transition = '.3s';
-            }, 50); // Small delay to re-enable transition
+            }, 10); // Small delay to re-enable transition
         }, 300); // Match the transition duration
     }
 }
