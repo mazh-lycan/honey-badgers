@@ -101,3 +101,32 @@ width: 100%
 .sticky + .content {
 padding-top: 102px;
 }
+
+
+/* IMAGE */
+
+.image-container {
+    overflow: hidden;
+    max-width: 900px; /* Adjust the width if necessary */
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    display: flex;
+    gap: 1.5rem; /* Padding between images */
+    /* Animation defined in JavaScript */
+}
+
+.image-wrapper > * {
+    flex: 0 0 300px; /* Image width */
+    height: 300px;   /* Image height */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .5rem;
+}
+
