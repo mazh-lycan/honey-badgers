@@ -24,11 +24,30 @@ nav {
     justify-content: center;
 }
 
+/* Mobile version under 768 px */
+@media (max-width: 767px) {
+    .logo {
+        display: none;
+    }
+    #honeyPotImage {
+        display: none;
+    }
+    div[style*="display: flex"] {
+        flex-direction: column; /* Stacks the content vertically on mobile */
+    }
+    div[style*="flex: 1"] {
+        flex: none;
+        width: 100%; /* Ensure text occupies full width */
+    }
+}
+
 @media (min-width: 1200px) {
     .logo {
         margin-right: 20%; 
     }
+    
 }
+
 
 @media (min-width: 1300px) {
     .logo {
