@@ -81,11 +81,26 @@ button:hover{
 
   div[style*="display: flex"] {
     flex-direction: column; /* Stack elements vertically */
+    flex-wrap: wrap;        
+    align-items: stretch;  
   }
+  
 
   .founder {
     width: 100%; /* Ensure full width on mobile */
-    margin: 0 0 15px 0; /* Add bottom margin for spacing between items */
+    margin: 0 0 15px 0; /* Bottom margin for spacing between items */
+    height: auto;            
+    box-sizing: border-box;   /
+  }
+
+  .founder-img {
+    width: 100%;
+    height: auto;            
+  }
+
+  .founder-text {
+    width: 100%;
+    height: auto;       
   }
 
 }
