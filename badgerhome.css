@@ -167,6 +167,12 @@ body {
   .mazh-button {
       display: none;
   }
+  #social{
+    display: none;
+  }
+  #socialtext{
+    display: none;
+  }
 }
 
   footer {
