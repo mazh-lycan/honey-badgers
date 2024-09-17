@@ -73,6 +73,23 @@ button:hover{
 }
 
 
+/* Mobile version under 768 px */
+@media (max-width: 767px) {
+  .logo {
+      display: none;
+  }
+
+  div[style*="display: flex"] {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .founder {
+    width: 100%; /* Ensure full width on mobile */
+    margin: 0 0 15px 0; /* Add bottom margin for spacing between items */
+  }
+
+}
+
 
 @media (min-width: 1200px) {
   .logo {
