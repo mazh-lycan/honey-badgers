@@ -165,13 +165,32 @@ body {
 
 @media (max-width: 767px) {
   .mazh-button {
-      display: none;
+    display: none;
   }
   #social{
     display: none;
   }
   #socialtext{
     display: none;
+  }
+}
+
+@media (max-width: 831px) {
+  .mazh-button {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 1009px) {
+  #logo img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mazh-button {
+    bottom: 20px;
   }
 }
 
@@ -190,8 +209,6 @@ body {
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.9),0px 0px 6px black,0px 0px 6px black; /* Add black shadow */
 
 }
-
-
 
   #background-img {
     position: fixed;
