@@ -49,6 +49,8 @@ body {
   
   #menu {
     position: absolute;
+    padding: 0;
+    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -163,6 +165,55 @@ body {
 
 }
 
+@media (max-height: 530px) {
+  #menu {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+}
+
+@media (max-height: 470px) {
+  #logo img {
+    width: 100px;
+    height: auto;
+  }
+  #menu {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .menu-button {
+    display: block;
+    padding: 5px 35px;
+    margin: 10px;
+    width: 350px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mazh-button {
+    bottom: 45px;
+  }
+}
+
+@media (max-width: 1009px) {
+  #logo img {
+    width: 150px;
+    height: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .mazh-button {
     display: none;
@@ -175,22 +226,23 @@ body {
   }
 }
 
-@media (max-width: 831px) {
-  .mazh-button {
-    bottom: 40px;
+@media (max-width: 548px) {
+  .menu-button {
+    display: block;
+    padding: 10px 70px;
+    margin: 15px;
+    width: 400px;
+    font-size: 36px;
   }
 }
 
-@media (max-width: 1009px) {
-  #logo img {
-    width: 150px;
-    height: auto;
-  }
-}
-
-@media (max-width: 1199px) {
-  .mazh-button {
-    bottom: 20px;
+@media (max-width: 435px) {
+  .menu-button {
+    display: block;
+    padding: 10px 35px;
+    margin: 10px;
+    width: 350px;
+    font-size: 36px;
   }
 }
 
