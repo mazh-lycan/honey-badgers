@@ -7,12 +7,18 @@ html, body {
 }
 
 body {
-  background-image: url('./pics/fondopic.png'); 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Fix the background image */
-  flex-grow: 1; /* Allow the body to grow and fill the space */
+  background-image: url('./pics/fondopic.png'); /* Reference your background image */
+  background-size: auto; /* Use the actual size of the background */
+  background-position: top left; /* Start tiling from the top-left */
+  background-repeat: repeat; /* Repeat the background image to cover all gaps */
+  min-height: 100vh; /* Full height of the viewport */
+  background-attachment: scroll; /* Allows background to scroll with content */
+  margin: 0;
+  padding: 0;
+  display: block; /* Ensure body takes up full space */
 }
+
+
 
   header {
     width: 100%; 
@@ -25,17 +31,16 @@ body {
   }
 
   container {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    flex-direction: column; /* Stack items vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: calc(100vh - 90px); /* Take full height of the viewport minus header */
+    height: auto; /* Allow container to grow with content */
     margin: 0;
-    padding: 0; /* Removed padding to avoid extra space */
-    overflow: hidden;
-    padding-top: 100px;
-  }
+    padding: 100px 0 0 0; /* Add padding to avoid overlap with the header */
+    overflow: visible; /* Ensure content can be scrolled */
+}
 
   .wrapper {
     display: flex;
@@ -75,35 +80,35 @@ button:hover{
 
 /* Mobile version under 768 px */
 @media (max-width: 767px) {
-  .logo {
-      display: none;
-  }
-
   div[style*="display: flex"] {
     flex-direction: column; /* Stack elements vertically */
-    flex-wrap: wrap;        
-    align-items: stretch;  
+    align-items: center; /* Center the items */
   }
-  
 
   .founder {
-    width: 100%; /* Ensure full width on mobile */
-    margin: 0 0 15px 0; /* Bottom margin for spacing between items */
-    height: auto;            
-    box-sizing: border-box;   /
+    width: 90%; /* Ensure divs take most of the width */
+    margin: 10px 0; /* Space between each founder */
+    flex-direction: column; /* Stack image and text vertically */
+    height: auto; /* Adjust height to fit content */
   }
 
   .founder-img {
-    width: 100%;
-    height: auto;            
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .founder-text {
-    width: 100%;
-    height: auto;       
+    position: relative; /* Ensure it stays inside the founder div */
+    padding: 10px;
+    opacity: 1; /* Keep the text always visible on mobile */
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional background for better readability */
+    width: 100%; /* Full width of the div */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in the width */
   }
-
 }
+
 
 @media (max-width: 1000px) {
 
