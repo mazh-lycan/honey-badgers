@@ -1,28 +1,26 @@
 html, body {
-  height: 100%; /* Ensure the body takes the full height */
+  height: 100%; 
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Stack header and container */
+  flex-direction: column; 
 }
 
 body {
-  background-image: url('./pics/fondopic.png'); /* Reference your background image */
-  background-size: auto; /* Use the actual size of the background */
-  background-position: top left; /* Start tiling from the top-left */
+  background-image: url('./pics/fondopic.png');
+  background-size: auto; 
+  background-position: top left; 
   background-repeat: repeat; /* Repeat the background image to cover all gaps */
-  min-height: 100vh; /* Full height of the viewport */
-  background-attachment: scroll; /* Allows background to scroll with content */
+  min-height: 100vh; 
+  background-attachment: scroll; 
   margin: 0;
   padding: 0;
-  display: block; /* Ensure body takes up full space */
+  display: block; 
 }
-
 
 
   header {
     width: 100%; 
-    height: 90px;
     text-align: center;
     background-image:url("./pics/webheader.jpg");
     padding: 2px 0;
@@ -36,19 +34,19 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: auto; /* Allow container to grow with content */
-    margin: 0;
-    padding: 100px 0 0 0; /* Add padding to avoid overlap with the header */
-    overflow: visible; /* Ensure content can be scrolled */
+    height: auto; 
+    margin-top: 60px;
+    padding: 100px 0 0 0; 
+    overflow: visible; 
 }
 
   .wrapper {
     display: flex;
     justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    align-items: center; 
     flex-direction: row; /* Display images side by side */
     width: 100%;
-    height: auto; /* Adjust the height to fit the content */
+    height: auto;
   }
 
 nav {
@@ -73,39 +71,70 @@ button:hover{
 
 
 .logo {
-  max-width: 270px; /* Adjust the max-width as needed */
+  max-width: 270px; 
   margin-right: 90px;
 }
 
 
 /* Mobile version under 768 px */
 @media (max-width: 767px) {
+
+  /* Menu */
+  .logo {
+      display: none;
+  }
+  .back-button {
+      display: none;
+  }
+  nav {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+  }
+
+  /* Divide menu in 2 rows */
+  .mobile-button:nth-child(1),
+  .mobile-button:nth-child(2) {
+      flex: 0 1 auto; 
+      margin: 10px; 
+      justify-content: center; 
+  }
+
+  .mobile-button:nth-child(3) {
+      flex: 0 1 100%; 
+      text-align: center;
+      display: flex;
+      justify-content: center; 
+      margin-top: 10px;
+  }
+
+  /* Founder images */
   div[style*="display: flex"] {
     flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center the items */
+    align-items: center; 
   }
 
   .founder {
-    width: 90%; /* Ensure divs take most of the width */
-    margin: 10px 0; /* Space between each founder */
-    flex-direction: column; /* Stack image and text vertically */
-    height: auto; /* Adjust height to fit content */
+    width: 90%; 
+    margin: 10px 0;
+    flex-direction: column; 
+    height: auto; 
   }
 
   .founder-img {
-    width: 100%; /* Full width for the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
 
   .founder-text {
-    position: relative; /* Ensure it stays inside the founder div */
+    position: relative;
     padding: 10px;
-    opacity: 1; /* Keep the text always visible on mobile */
+    opacity: 1; 
     color: white;
-    background: rgba(0, 0, 0, 0.5); /* Optional background for better readability */
-    width: 100%; /* Full width of the div */
+    background: rgba(0, 0, 0, 0.5); /* Easier to read */
+    width: 100%; 
     text-align: center;
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    box-sizing: border-box; 
   }
 }
 
@@ -126,21 +155,23 @@ button:hover{
   }
 }
 
+/* Further increase margin on very wide screens */
+
 @media (min-width: 1400px) {
   .logo {
-      margin-right: 30%; /* Further increase margin on very wide screens */
+      margin-right: 30%; 
   }
 }
 
 @media (min-width: 1750px) {
   .logo {
-      margin-right: 40%; /* Further increase margin on very wide screens */
+      margin-right: 40%;
   }
 }
 
 @media (min-width: 2000px) {
   .logo {
-      margin-right: 45%; /* Further increase margin on very wide screens */
+      margin-right: 45%; 
   }
 }
 
@@ -152,9 +183,9 @@ button:hover{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin: 15px; /* Add some space between the images */
-  border: 5px solid #ffffff; /* Add a white border around the container */
-  transition: border-color 0.3s ease; /* Animate the border color */
+  margin: 15px; 
+  border: 5px solid #ffffff;
+  transition: border-color 0.3s ease;
   
 }
   
@@ -199,13 +230,13 @@ button:hover{
   r {
     color: white;
     text-align: center;
-    font-size: 27px; /* Set font size */
+    font-size: 27px; 
     font-family: consolas;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.9),0px 0px 6px black,0px 0px 6px black; /* Add black shadow */
   }
   p {
     color: white;
     text-align: center;
-    font-size: 16px; /* Set font size */
+    font-size: 16px; 
     font-family: consolas;
   }
