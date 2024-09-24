@@ -29,17 +29,35 @@ nav {
     .logo {
         display: none;
     }
+    .back-button {
+        display: none;
+    }
     #honeyPotImage {
         display: none;
     }
-    div[style*="display: flex"] {
-        flex-direction: column; /* Stacks the content vertically on mobile */
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Allows the buttons to wrap into multiple rows */
+        justify-content: center; /* Center the buttons */
     }
-    div[style*="flex: 1"] {
-        flex: none;
-        width: 100%; /* Ensure text occupies full width */
+
+    /* Divide menu in 2 rows */
+    .mobile-button:nth-child(1),
+    .mobile-button:nth-child(2) {
+        flex: 0 1 auto; 
+        margin: 10px; 
+        justify-content: center; 
+    }
+
+    .mobile-button:nth-child(3) {
+        flex: 0 1 100%; 
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        margin-top: 10px;
     }
 }
+
 
 @media (min-width: 1200px) {
     .logo {
