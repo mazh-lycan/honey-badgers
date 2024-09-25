@@ -48,17 +48,19 @@ function scrolling() {
     }
 }
 
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { stickyFunction() };
 
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
-function myFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
+function stickyFunction() {
+    if (window.innerWidth>767){
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }    
 }
 
 // Function to play the sound when the Honey image is clicked
