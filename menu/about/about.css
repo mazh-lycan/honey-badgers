@@ -173,6 +173,7 @@ p{
     font-size: 18px; 
     font-family: "Merienda", cursive;
     color: white;
+    text-align: justify;
 }
 
 
@@ -190,7 +191,7 @@ r{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: justify;
+    text-align: center;
 }
 m{
     font-size: 22px; 
