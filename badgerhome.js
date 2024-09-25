@@ -12,9 +12,9 @@ logo.addEventListener('click', () => {
       backgroundImg.src = './pics/fondopic.png';
     }else{ 
       audio.play();
-      backgroundImg.style.display = 'none'; // Oculta la imagen
-      backgroundVideo.style.display = 'block'; // Muestra el video
-      backgroundVideo.src = './videos/badgers.mp4'; // Cambia la fuente del video
+      backgroundImg.style.display = 'none'; // Hides the background image
+      backgroundVideo.style.display = 'block'; // Shows the video as background
+      backgroundVideo.src = './videos/badgers.mp4'; 
     }
    
   });

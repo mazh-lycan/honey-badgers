@@ -157,7 +157,7 @@ body {
 }
 
 .mazh-button p {
-    margin-top: 0px; /* Add some space between the button and the text */
+    margin-top: 0px;
     font-family: 'consolas';
     font-size: 14px;
     color: white;
@@ -272,7 +272,7 @@ body {
     z-index: 0;
   }
   #background-video {
-    display: none; /* Inicialmente oculto */
+    display: none; /* Initially hidden */
   }
 
   
