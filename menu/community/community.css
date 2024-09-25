@@ -5,43 +5,29 @@ body, html {
     overflow: hidden;
     background-image: url("./pics/banner.png");
     background-size: cover;
-    font-family: 'AGRESSIVE', sans-serif; /* Specify custom font */
+    font-family: 'AGRESSIVE', sans-serif; /* Specific custom font */
 }
-
-.home-button {
-    position: absolute;
-    top: 70px;
-    left: 70px;
-    z-index: 999;
-    box-shadow: 2px 4px 4px whitesmoke, 0px 0px 6px white,0px 0px 6px white; /* Add white shadow */
-
-  }
-
-  .home-button:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
 
 .container {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
     padding: 1px;
 }
 
 .title {
-    font-size: 52px; /* Set font size */
-    margin-bottom: 20px; /* Add margin below the title */
+    font-size: 52px; 
+    margin-bottom: 20px;
     color: white;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.9),4px 2px 6px black,0px 0px 2px black; /* Add black shadow */
 }
 
 
 .bottompage {
-    font-size: 22px; /* Set font size */
-    margin-top: 10px; /* Add margin below the title */
+    font-size: 22px; 
+    margin-top: 10px; 
     color: white;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.9),0px 0px 6px black,0px 0px 6px black; /* Add black shadow */
 }
@@ -59,7 +45,7 @@ body, html {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-    opacity: 0.86; /* Set opacity to make buttons semi-transparent */
+    opacity: 0.86; /* Opacity to make buttons semi-transparent */
     margin: 15px;
     border-radius: 22px;
 }
@@ -88,4 +74,49 @@ body, html {
 
 .button:hover .text {
     opacity: 1;
+}
+
+/* Mobile version under 768 px */
+@media (max-width: 767px) {
+
+    .title {
+        text-align: center;
+    }
+    
+    .bottompage {
+        text-align: center;
+    }
+
+    .buttons {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .text {
+        display: none;
+    }
+
+}
+
+
+/* Tablet version under 1100 px */
+@media (max-width: 1099) {
+
+    .title {
+        text-align: center;
+    }
+    
+    .bottompage {
+        text-align: center;
+    }
+
+    .buttons {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .text {
+        display: none;
+    }
+
 }
