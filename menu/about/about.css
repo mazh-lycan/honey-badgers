@@ -15,8 +15,13 @@ header {
 }
 
 .logo {
-    max-width: 270px; /* Adjust the max-width as needed */
+    max-width: 270px; 
     margin-right: 90px;
+}
+
+.side-logo {
+    width: 150px; 
+    margin: 20px;
 }
 
 nav {
@@ -24,10 +29,27 @@ nav {
     justify-content: center;
 }
 
+.manifesto-box{
+    display: flex; 
+}
+
+/* On PC the image for PC appears, on mobile, the image for mobile does it*/
+#imglaptop{
+    display: block;
+}
+#imgmobile{
+    display: none;
+}
+
 /* Mobile version under 768 px */
 @media (max-width: 767px) {
     .logo {
         display: none;
+    }
+
+    .side-logo{
+        width: 115px; 
+        margin: 20px;
     }
     .back-button {
         display: none;
@@ -35,10 +57,26 @@ nav {
     #honeyPotImage {
         display: none;
     }
+    .manifesto-box{
+        display: block;
+    }
+
+    .manifesto-text{
+        flex: 0;
+    }
+
+    #imglaptop{
+        display: none;
+    }
+    #imgmobile{
+        display: block;
+        max-width: 100%;
+    }
+
     nav {
         display: flex;
-        flex-wrap: wrap; /* Allows the buttons to wrap into multiple rows */
-        justify-content: center; /* Center the buttons */
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 
     /* Divide menu in 2 rows */
@@ -73,21 +111,22 @@ nav {
     }
 }
 
+/* Further increase margin on very wide screens */
 @media (min-width: 1400px) {
     .logo {
-        margin-right: 30%; /* Further increase margin on very wide screens */
+        margin-right: 30%; 
     }
 }
 
 @media (min-width: 1750px) {
     .logo {
-        margin-right: 40%; /* Further increase margin on very wide screens */
+        margin-right: 40%; 
     }
 }
 
 @media (min-width: 2000px) {
     .logo {
-        margin-right: 45%; /* Further increase margin on very wide screens */
+        margin-right: 45%; 
     }
 }
 
@@ -131,22 +170,22 @@ button:hover{
 
 
 p{
-    font-size: 18px; /* Set font size */
+    font-size: 18px; 
     font-family: "Merienda", cursive;
     color: white;
 }
 
 
 .buttoncontainer p{
-    margin-top: 0px; /* Add some space between the button and the text */
+    margin-top: 0px; 
     font-family: 'consolas';
     font-size: 14px;
     color: white;
 }
 
 r{
-    font-size: 18px; /* Set font size */
-    font-family: 'AGRESSIVE', sans-serif; /* Specify custom font */
+    font-size: 18px; 
+    font-family: 'AGRESSIVE', sans-serif; /* Custom font */
     color: orange;
     display: flex;
     justify-content: center;
@@ -154,42 +193,41 @@ r{
     text-align: justify;
 }
 m{
-    font-size: 22px; /* Set font size */
+    font-size: 22px; 
     font-family: Consolas, sans-serif;
     color: orange;
     display: flex;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
+/* Sticky class */
 .sticky {
 position: fixed;
 top: 0;
 width: 100%
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
 padding-top: 102px;
 }
 
 
-/* IMAGE */
+/* Image */
 
 .image-container {
     overflow: hidden;
-    max-width: 948px; /* Adjust the width if necessary */
+    max-width: 948px; 
     margin: 0 auto;
 }
 
 .image-wrapper {
     display: flex;
-    gap: 1.5rem; /* Padding between images */
+    gap: 1.5rem; 
     /* Animation defined in JavaScript */
 }
 
 .image-wrapper > * {
-    flex: 0 0 300px; /* Image width */
-    height: 300px;   /* Image height */
+    flex: 0 0 300px; 
+    height: 300px;   
 }
 
 img {
