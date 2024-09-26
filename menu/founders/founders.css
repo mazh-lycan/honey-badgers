@@ -75,7 +75,9 @@ button:hover{
   margin-right: 90px;
 }
 
-
+.back-button-mobile{
+  display: none;
+}
 /* Mobile version under 768 px */
 @media (max-width: 767px) {
 
@@ -86,6 +88,13 @@ button:hover{
   .back-button {
       display: none;
   }
+  .back-button-mobile{
+    display: block;
+    z-index: 1050;
+    top: 20px;
+    left: 10px; 
+    position: absolute;
+  }
   nav {
       display: flex;
       flex-wrap: wrap; 
@@ -93,20 +102,20 @@ button:hover{
   }
 
   /* Divide menu in 2 rows */
-  .mobile-button:nth-child(1),
-  .mobile-button:nth-child(2) {
-      flex: 0 1 auto; 
-      margin: 10px; 
-      justify-content: center; 
-  }
+    .mobile-button:nth-child(1),
+    .mobile-button:nth-child(2) {
+        flex: 0 1 auto; 
+        margin: 10px; 
+        justify-content: center; 
+    }
 
-  .mobile-button:nth-child(3) {
-      flex: 0 1 100%; 
-      text-align: center;
-      display: flex;
-      justify-content: center; 
-      margin-top: 10px;
-  }
+    .mobile-button:nth-child(3) {
+        flex: 0 1 100%; 
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        margin-top: 10px;
+    }
 
   /* Founder images */
   div[style*="display: flex"] {

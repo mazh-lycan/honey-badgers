@@ -18,6 +18,9 @@ header {
     max-width: 270px; 
     margin-right: 90px;
 }
+.back-button-mobile{
+   display:none;
+  }
 
 .side-logo {
     width: 150px; 
@@ -78,6 +81,13 @@ nav {
         flex-wrap: wrap; 
         justify-content: center; 
     }
+    .back-button-mobile{
+        display: block;
+        z-index: 1050;
+        top: 20px;
+        left: 10px; 
+        position: absolute;
+      }
 
     /* Divide menu in 2 rows */
     .mobile-button:nth-child(1),
