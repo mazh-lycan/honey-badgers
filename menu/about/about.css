@@ -44,8 +44,8 @@ nav {
     display: none;
 }
 
-/* Mobile version under 768 px */
-@media (max-width: 767px) {
+/* Mobile and Tablet version under 768 px */
+@media (max-width: 851px) {
     .logo {
         display: none;
     }
@@ -66,6 +66,8 @@ nav {
 
     .manifesto-text{
         flex: 0;
+        margin: 10px;
+
     }
 
     #imglaptop{
