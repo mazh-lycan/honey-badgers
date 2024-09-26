@@ -56,7 +56,11 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1;
   }
+
   
+  a:link { text-decoration: none; }
+
+
   .menu-button {
     display: block;
     padding: 10px 100px;
@@ -113,6 +117,7 @@ body {
       .menu-button {
         display: block;
         padding: 10px 20px;
+        
         margin: 10px;
         font-size: 16px;
         border: none;
