@@ -5,8 +5,16 @@ body, html {
     overflow: hidden;
     background-image: url("./pics/banner.png");
     background-size: cover;
-    font-family: 'AGRESSIVE', sans-serif; /* Specific custom font */
+    font-family: 'AGRESSIVE', sans-serif; /* Custom font */
 }
+
+.back-button-mobile{
+    display: block;
+    z-index: 1050;
+    top: 10px;
+    left: 20px; 
+    position: absolute;
+  }
 
 .container {
     display: flex;
@@ -41,19 +49,22 @@ body, html {
 
 .button {
     flex: 1;
-    position: relative;
+    position: relative; 
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-    opacity: 0.86; /* Opacity to make buttons semi-transparent */
+    opacity: 0.86; /* Buttons semitransparent */
     margin: 15px;
-    border-radius: 22px;
+    
 }
 
 .button img {
     width: 100%;
     height: auto;
+    border-radius: 22px;
 }
+
+
 
 .text {
     position: absolute;
@@ -71,10 +82,14 @@ body, html {
     flex-grow: 1.2;
     opacity: 1;
 }
+.button:not(:hover) {
+    flex-grow: 0.9; /* Unselected buttons become smaller */
+}
 
 .button:hover .text {
     opacity: 1;
 }
+
 
 /* Mobile version under 768 px */
 @media (max-width: 767px) {
@@ -100,7 +115,7 @@ body, html {
 
 
 /* Tablet version under 1100 px */
-@media (max-width: 1099) {
+@media (max-width: 1099px) {
 
     .title {
         text-align: center;
