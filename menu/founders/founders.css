@@ -78,115 +78,9 @@ button:hover{
 .back-button-mobile{
   display: none;
 }
-/* Mobile version under 768 px */
-@media (max-width: 767px) {
-
-  /* Menu */
-  .logo {
-      display: none;
-  }
-  .back-button {
-      display: none;
-  }
-  .back-button-mobile{
-    display: block;
-    z-index: 1050;
-    top: 20px;
-    left: 10px; 
-    position: absolute;
-  }
-  nav {
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: center; 
-  }
-
-  /* Divide menu in 2 rows */
-    .mobile-button:nth-child(1),
-    .mobile-button:nth-child(2) {
-        flex: 0 1 auto; 
-        margin: 10px; 
-        justify-content: center; 
-    }
-
-    .mobile-button:nth-child(3) {
-        flex: 0 1 100%; 
-        text-align: center;
-        display: flex;
-        justify-content: center; 
-        margin-top: 10px;
-    }
-
-  /* Founder images */
-  div[style*="display: flex"] {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; 
-  }
-
-  .founder {
-    width: 90%; 
-    margin: 10px 0;
-    flex-direction: column; 
-    height: auto; 
-  }
-
-  .founder-img {
-    width: 100%; 
-    height: auto; 
-  }
-
-  .founder-text {
-    position: relative;
-    padding: 10px;
-    opacity: 1; 
-    color: white;
-    background: rgba(0, 0, 0, 0.5); /* Easier to read */
-    width: 100%; 
-    text-align: center;
-    box-sizing: border-box; 
-  }
-  .founder:click .founder-text { /* cacnea hover to "click"*/
-    opacity: 1;
-  }
-  
-}
 
 
-@media (max-width: 1000px) {
 
-}
-
-@media (min-width: 1200px) {
-  .logo {
-      margin-right: 20%; 
-  }
-}
-
-@media (min-width: 1300px) {
-  .logo {
-      margin-right: 25%; 
-  }
-}
-
-/* Further increase margin on very wide screens */
-
-@media (min-width: 1400px) {
-  .logo {
-      margin-right: 30%; 
-  }
-}
-
-@media (min-width: 1750px) {
-  .logo {
-      margin-right: 40%;
-  }
-}
-
-@media (min-width: 2000px) {
-  .logo {
-      margin-right: 45%; 
-  }
-}
 
 .founder {
   flex: 1;
@@ -253,3 +147,108 @@ button:hover{
     font-size: 16px; 
     font-family: consolas;
   }
+
+
+/* Mobile version under 768 px */
+@media (max-width: 767px) {
+
+  /* Menu */
+  .logo {
+      display: none;
+  }
+  .back-button {
+      display: none;
+  }
+  .back-button-mobile{
+    display: block;
+    z-index: 1050;
+    top: 20px;
+    left: 10px; 
+    position: absolute;
+  }
+  nav {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+  }
+
+  /* Divide menu in 2 rows */
+    .mobile-button:nth-child(1),
+    .mobile-button:nth-child(2) {
+        flex: 0 1 auto; 
+        margin: 10px; 
+        justify-content: center; 
+    }
+
+    .mobile-button:nth-child(3) {
+        flex: 0 1 100%; 
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        margin-top: 10px;
+    }
+
+  /* Founder images */
+  div[style*="display: flex"] {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; 
+  }
+
+  .founder {
+    width: 90%; 
+    margin: 10px 0;
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .founder-img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .founder-text {
+    position: absolute;
+    padding: 10px;
+    opacity: 1; 
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Easier to read */
+    width: 100%; 
+    text-align: center;
+    box-sizing: border-box; 
+    z-index: 100;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  .logo {
+      margin-right: 20%; 
+  }
+}
+
+@media (min-width: 1300px) {
+  .logo {
+      margin-right: 25%; 
+  }
+}
+
+/* Further increase margin on very wide screens */
+
+@media (min-width: 1400px) {
+  .logo {
+      margin-right: 30%; 
+  }
+}
+
+@media (min-width: 1750px) {
+  .logo {
+      margin-right: 40%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .logo {
+      margin-right: 45%; 
+  }
+}
