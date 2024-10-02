@@ -19,15 +19,4 @@ logo.addEventListener('click', () => {
    
   });
 
-document.getElementById('about-btn').addEventListener('click', function() {
-   window.open('./menu/about/about.html', '_self');
-});
-
-document.getElementById('founders-btn').addEventListener('click', function() {
-  window.open('./menu/founders/founders.html','_self');
-});
-
-document.getElementById('community-btn').addEventListener('click', function() {
-  window.open('./menu/community/community.html','_blank');
-});
 
