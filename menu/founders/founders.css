@@ -145,6 +145,10 @@ button:hover{
     text-align: center;
     box-sizing: border-box; 
   }
+  .founder:click .founder-text { /* cacnea hover to "click"*/
+    opacity: 1;
+  }
+  
 }
 
 
