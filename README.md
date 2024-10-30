@@ -15,4 +15,6 @@ A Honey Badgers home website with all links related to the project:
     * Search by inscription number, ID, or badger number
     * Check prices from Magic Eden (if listed)
 
+Mazh
+𖢘
 
